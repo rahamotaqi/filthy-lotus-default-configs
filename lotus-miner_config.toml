@@ -298,11 +298,17 @@
   # type: Duration
   #CommitBatchSlack = "1h0m0s"
 
+  # network BaseFee below which to stop doing precommit batching, instead
+  # sending precommit messages to the chain individually
+  #
+  # type: types.FIL
+  #BatchPreCommitAboveBaseFee = "0.00000000032 FIL"
+
   # network BaseFee below which to stop doing commit aggregation, instead
   # submitting proofs to the chain individually
   #
   # type: types.FIL
-  #AggregateAboveBaseFee = "0.00000000015 FIL"
+  #AggregateAboveBaseFee = "0.00000000032 FIL"
 
   # type: uint64
   #TerminateBatchMax = 100
